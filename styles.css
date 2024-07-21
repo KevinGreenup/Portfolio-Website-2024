@@ -64,6 +64,7 @@ nav .right a {
     margin: 50px 0;
     align-items: center;
     gap: 40px;
+    margin-bottom: 100px;
 }
 
 .hero-section .text {
@@ -94,6 +95,8 @@ border: 2px solid var(--text-color);
 }
 .hero-section .headshot {
     flex: 2; 
+    display: flex;
+    justify-content: right;
 }
 
 .hero-section .headshot img {
@@ -101,6 +104,23 @@ border: 2px solid var(--text-color);
     width: 350px;
     
 }
+@media (max-width: 850px) {
+    /* SECTION 1 HERO */
+    .hero-section .text .h2 {
+     font-size: 35px;   
+    }
+}
+
+@media (max-width: 740px) {
+    /* SECTION 1 HERO */
+    .hero-section  {
+     flex-direction: column-reverse;   
+    }
+    .hero-section .headshot img {
+        width: 300px;
+    }
+}
+
     @media (max-width: 600px) {
         /* NAVBAR*/
      nav {
@@ -118,5 +138,14 @@ border: 2px solid var(--text-color);
       }  
      nav .right a span {
         display: none;
+     }
+
+     /* SECTION 1: HERO*/
+     .hero-section {
+        padding:  0 20px;
+     }
+
+     .hero-section .text h2 {
+        font-size: 30px;
      }
     }
